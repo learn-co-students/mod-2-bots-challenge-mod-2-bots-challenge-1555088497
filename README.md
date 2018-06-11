@@ -1,24 +1,22 @@
-# README
+# Rails Code Challenge Assessment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Objectives (what we're assessing)
 
-Things you may want to cover:
+* MVC
+* REST
+* Request/Response Cycle
+* Form/Form Helpers
+* ActiveRecord
+* Validations
 
-* Ruby version
+## Setup
 
-* System dependencies
+Before you begin, fork and clone this repo, run `bundle install` and `rake db:migrate` to get started.
 
-* Configuration
+## The Domain
 
-* Database creation
+Congrats! You've been hired by ***WeBots~ltd~*** to help track the way they outfit their variety of robots. The company has decided to create a rails app where a user can create Robots and assign one of many functions to each.
 
-* Database initialization
+Your teammate has already started work on the site. They've added a `Robot` model and an `Ability` model, and set up a `seeds.rb` file to reflect the initial state of the company's inventory. However, the relationship between these models has not been established. Each ability can be bestowed upon ***more than one robot***, and each robot has ***one ability***.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once you've set up the relationship between models and seeded the database, you can visit `/robots` to display the existing Robots, and `/abilities` to display Abilities. 
