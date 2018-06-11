@@ -40,7 +40,7 @@ end
 robots = []
 10.times do
   name = generate_name
-  robots << { name: name, image_url: "https://robohash.org/#{name}" },
+  robots << { name: name, image_url: "https://robohash.org/#{name}" }
 end
 
 # ---------------
