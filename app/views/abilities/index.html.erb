@@ -1,0 +1,12 @@
+<h2>All Abilities</h2>
+
+<ul>
+  <% @abilities.each do |ability| %>
+    <li>
+      <%= ability.name %>
+      <br>
+      Description: <%= ability.description %>
+    </li>
+    <br>
+  <% end %>
+</ul>
