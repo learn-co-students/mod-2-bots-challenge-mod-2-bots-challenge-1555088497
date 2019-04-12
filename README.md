@@ -27,24 +27,24 @@ Once you've set up the relationship between models and seeded the database, you 
 
 Read through the instructions to get a sense of the scope of this code challenge, and then tackle them one by one.
 
-1. Create the associations between models. You may have to alter the current schema to get your code working. If you've set up your relationships properly, you should be able to run `rake db:seed` without errors, and confirm in console that the robots and abilities have been created with the proper relations.
+#1. Create the associations between models. You may have to alter the current schema to get your code working. If you've set up your relationships properly, you should be able to run `rake db:seed` without errors, and confirm in console that the robots and abilities have been created with the proper relations.
 
-2. On the robots index page, a robot's name should link to the robot's show page.
+#2. On the robots index page, a robot's name should link to the robot's show page.
 
 3. The robot show page should include the robot's name (eg. d-17), an image (via `image_url`), and its ability. The ability should link to the ability show page.  
 
-4. The ability show page should have its name and description.
+#4. The ability show page should have its name and description.
 
-5. As a visitor to the website, I should be able to create a new robot with a name. The `image_url` will be generated automatically.
+#5. As a visitor to the website, I should be able to create a new robot with a name. The `image_url` will be generated automatically.
 
-6. The form should also allow each robot to be created with **only one of the existing abilities**.
+#6. The form should also allow each robot to be created with **only one of the existing abilities**.
 
 ![img](add_robot.gif)
 
 
-7. Make sure no two robots have the same name.
+#7. Make sure no two robots have the same name.
 
-8. Add a filter to the index view of the robots. This will allow the visitor to search for an existing robots and display all the robots whose name contains the search term.
+#8. Add a filter to the index view of the robots. This will allow the visitor to search for an existing robots and display all the robots whose name contains the search term.
 
 ![img](search.gif)
 
