@@ -3,7 +3,7 @@
 <ul>
   <% @abilities.each do |ability| %>
     <li>
-      <%= ability.name %>
+      <%= link_to "#{ability.name}", ability %>
       <br>
       Description: <%= ability.description %>
     </li>
