@@ -50,7 +50,7 @@ end
 # Just uncomment line 53 and run `rake db:seed` again in your terminal.
 # (Note: If you try to do this before you set up proper associations, it will error.)
 # ---------------
-# robots = robots.map { |robot| robot.merge( { ability_id: Ability.all.sample.id } ) }
+ robots = robots.map { |robot| robot.merge( { ability_id: Ability.all.sample.id } ) }
 # ---------------
 
 robots.each { |robot| Robot.create(robot) }
