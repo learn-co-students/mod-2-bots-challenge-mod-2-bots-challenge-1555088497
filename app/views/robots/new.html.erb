@@ -1,0 +1,13 @@
+<% @robot.errors.full_messages.each do |message| %>
+<p><%= message %></p>
+<% end %>
+
+<%= form_for @robot do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.collection_select :abilities_id, @abilities, :id, :name %>
+<% end %>
+
+<%= button_to "Submit", robots_path %>
