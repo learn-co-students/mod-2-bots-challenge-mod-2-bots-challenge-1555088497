@@ -1,0 +1,9 @@
+<%= form_for @robot do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= label_tag "Ability" %>
+  <%= f.collection_select :ability_id, @abilities, :id, :name %>
+
+  <%= f.submit "Add Robot" %>
+<% end %>
