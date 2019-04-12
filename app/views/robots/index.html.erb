@@ -1,10 +1,17 @@
 <h2>All Robots</h2>
 
+<%= form_tag robots_path method: :get do %>
+  <%= text_field_tag :q %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <ul>
   <% @robots.each do |robot| %>
     <li>
-      <%= robot.name %>
+      <%= link_to "#{robot.name}", robot %>
     </li>
     <br>
   <% end %>
 </ul>
+
+<%= link_to "Add New Robot", new_robot_path %>

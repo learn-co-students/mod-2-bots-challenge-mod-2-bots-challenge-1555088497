@@ -1,0 +1,6 @@
+<%= form_for @robot do |f| %>
+<%= f.text_field :name %>
+<%= f.collection_select(:ability_id, Ability.all, :id, :name ) %>
+<%= f.submit "Create Robot" %>
+
+<% end %>
