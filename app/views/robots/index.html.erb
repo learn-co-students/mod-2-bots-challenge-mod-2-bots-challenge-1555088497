@@ -1,9 +1,14 @@
 <h2>All Robots</h2>
+<%@robot.errors.full_messages.each |message| do %>
+<%= message %>
+<% end %>
+
+
 
 <ul>
   <% @robots.each do |robot| %>
     <li>
-      <%= robot.name %>
+      <%= link_to robot.name, robot_path(robot) %>
     </li>
     <br>
   <% end %>
