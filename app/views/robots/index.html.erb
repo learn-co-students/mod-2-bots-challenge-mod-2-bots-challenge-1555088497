@@ -3,8 +3,10 @@
 <ul>
   <% @robots.each do |robot| %>
     <li>
-      <%= robot.name %>
+      <%= link_to robot.name, robot_path(robot) %>
     </li>
     <br>
   <% end %>
 </ul>
+
+<%= button_to "Add a Robot", new_robot_path, method: :get %>
