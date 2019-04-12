@@ -1,0 +1,11 @@
+<%= form_for(@robot) do |form|%>
+    <%= form.label :name %>
+    <%= form.text_field :name%>
+    <br>
+    <%= form.label :image_url%>
+    <%= form.text_field :image_url %>
+    <br>
+    <%= form.collection_select :abilities_id, @abilities, :id, :name %>
+    <br>
+    <%= submit_tag "Submit"%>
+<% end %>

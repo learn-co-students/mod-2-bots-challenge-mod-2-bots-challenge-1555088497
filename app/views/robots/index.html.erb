@@ -1,9 +1,21 @@
 <h2>All Robots</h2>
 
+<div>
+  <h2>Search for Existing robots </h2>
+  <%= form_tag('/search', method: "GET")%>
+    <%= text_field_tag :search_term%>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
+
+
 <ul>
   <% @robots.each do |robot| %>
     <li>
-      <%= robot.name %>
+      <%= link_to robot.name, robot_path(robot) %>
+      <%= image_tag robot.image_url %>
+      <%= link_to "Ability", ability_path(robot.ability_id)%>
     </li>
     <br>
   <% end %>
